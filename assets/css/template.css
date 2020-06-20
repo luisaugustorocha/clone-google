@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+header {
+    position: absolute;
+    top: 0;
+    height: 62px;
+    width: 100%;
+}
+#menu ul {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 30px;
+    line-height: 30px;
+    margin: 16px 30px 0px 0px;
+    list-style: none;
+}
+#menu ul li a {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    font-size: 13px;
+}
+#menu ul li a:hover {
+    text-decoration: underline;
+    color: #5f6368;
+}
+#menu ul li a img {
+    margin: 8px 22px 0px 22px;
+}
+#menu ul li a.login {
+    height: 30px;
+    border: 0px solid #4285f4;
+    background-color: #4285f4;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0 12px;
+    border-radius: 3px;
+}
+#menu ul li a.login:hover {
+    text-decoration: none;
+    cursor: default;
+}
+#menu .header_imagens {
+    margin-left: 17px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+section .conteudo_central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .google img {
+    height: 94px;
+    width: 289px;
+    margin-bottom: 30px;
+}
+section .campo_busca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 582px;
+    height: 40px;
+    margin-bottom: 29px;
+    border-radius: 50px;
+    border: 1px solid #E4E4E4;
+}
+section .campo_busca:hover, .campo_busca:active {
+    box-shadow: 1px 1px 10px #AAA;
+}
+section .barra_pesquisa  {
+    border: none;
+    height: 29px;
+    width: 82%;
+    margin: 0px 0px 0px 20px;
+    background-color: transparent;
+    font-size: 15px;
+}
+section .barra_pesquisa:focus {
+    outline: 0;
+}
+section .microfone {
+    vertical-align: middle;
+    height: 23px;
+    width: 18px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+section button {
+    height: 36px;
+    width: 140px;
+    margin-right: 6px;
+    margin-left: 6px;
+    color: #5F6368;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+section button:hover {
+    border: 1px solid #C6C6C6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+footer {
+    width: 100%;
+    height: 84px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+footer .footer_brasil {
+    height: 41px;
+    line-height: 41px;
+    padding-left: 30px;
+    color: rgba(0, 0, 0, 0.54);
+    border-top: 1px solid #E4E4E4;
+    font-size: 15px;
+}
+footer .footer_rodape {
+    display: flex;
+    justify-content: space-between;
+    height: 41px;
+    line-height: 41px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+}
+footer .footer_rodape .footer_left a {
+    text-decoration: none;
+    color: #5F6368;
+    padding-right: 23px;
+}
+footer .footer_rodape .footer_right a {
+    text-decoration: none;
+    color: #5F6368;
+    padding-left: 23px;
+}
+footer .footer_rodape .footer_left a:hover {
+    text-decoration: underline;
+    color: #5F6368;
+}
+footer .footer_rodape .footer_right a:hover {
+    text-decoration: underline;
+    color: #5F6368;
+}
+
+@media (min-width: 500px) and (max-width: 585px) {
+    section .google img {
+        height: 65px;
+        width: auto;
+    }
+    section .campo_busca {
+        width: 470px;
+    }
+    section .barra_pesquisa {
+        width: 75%;
+    }
+    footer {
+        height: 166px;
+        position: static;
+    }
+    footer .footer_rodape .footer_left a {
+        display: flex;
+        justify-content: flex-start;
+    }
+    footer .footer_rodape .footer_right a {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+    section .google img {
+        height: 65px;
+        width: auto;
+    }
+    section .campo_busca {
+        width: 390px;
+    }
+    section .barra_pesquisa {
+        width: 75%;
+    }
+    footer {
+        height: 166px;
+        position: static;
+    }
+    footer .footer_rodape .footer_left a {
+        display: flex;
+        justify-content: flex-start;
+    }
+    footer .footer_rodape .footer_right a {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 399px) {
+    section .google img {
+        height: 50px;
+        width: auto;
+    }
+
+    section .barra_pesquisa {
+        width: 65%;
+    }   
+    section .campo_busca {
+        width: 300px;
+    }
+    section .microfone {
+        margin-right: 13px;
+    }
+    section button {
+        width: 70%;
+        margin: 5px 0px;
+        padding: 0 10px;
+    }
+    footer {
+        height: 166px;
+        position: static;
+    }
+    footer .footer_rodape .footer_left a {
+        display: flex;
+        justify-content: flex-start;
+    }
+    footer .footer_rodape .footer_right a {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

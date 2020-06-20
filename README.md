@@ -1,0 +1,1 @@
+Página de clone do Google criada com o intuito de aplicar conhecimentos de HTML e CSS.
